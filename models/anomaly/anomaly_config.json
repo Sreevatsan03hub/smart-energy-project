@@ -1,0 +1,55 @@
+{
+    "model_type": "IsolationForest",
+    "parameters": {
+        "n_estimators": 200,
+        "contamination": 0.05,
+        "random_state": 42
+    },
+    "features": [
+        "residual",
+        "deviation_pct",
+        "residual_rolling_mean_24h",
+        "residual_rolling_std_24h",
+        "load_rolling_mean_24h",
+        "load_rolling_std_24h",
+        "hour",
+        "day_of_week",
+        "month",
+        "is_weekend"
+    ],
+    "regions": {
+        "AEP": {
+            "deviation_threshold_percent": 2.0930675264301644
+        },
+        "COMED": {
+            "deviation_threshold_percent": 2.124648700613146
+        },
+        "DAYTON": {
+            "deviation_threshold_percent": 2.272427211397555
+        },
+        "DEOK": {
+            "deviation_threshold_percent": 2.5758267098306526
+        },
+        "DOM": {
+            "deviation_threshold_percent": 2.4591512271561524
+        },
+        "DUQ": {
+            "deviation_threshold_percent": 3.0430803571914704
+        },
+        "EKPC": {
+            "deviation_threshold_percent": 5.0309856239784745
+        },
+        "FE": {
+            "deviation_threshold_percent": 2.0566730759494174
+        },
+        "NI": {
+            "deviation_threshold_percent": 2.1921076207191996
+        },
+        "PJME": {
+            "deviation_threshold_percent": 2.227970996269141
+        },
+        "PJMW": {
+            "deviation_threshold_percent": 2.4219198547976553
+        }
+    }
+}

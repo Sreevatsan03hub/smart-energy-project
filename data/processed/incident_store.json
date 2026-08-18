@@ -1,0 +1,4094 @@
+{
+  "INC-Jul282018-PJME-01": {
+    "id": "INC-Jul282018-PJME-01",
+    "region": "PJME",
+    "anomalyId": "ano_PJME_0_2018072821",
+    "timestamp": "Jul 28, 2018 21:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -1092.6,
+    "deviationPct": 2.84,
+    "actualMW": 37375.0,
+    "expectedMW": 38467.6,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-1092.6 MW below baseline).",
+    "createdAt": "Jul 28, 2018T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.629317",
+    "logs": [
+      {
+        "timestamp": "Jul 28, 2018 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-1,092.6 MW, 2.84%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul222018-PJME-02": {
+    "id": "INC-Jul222018-PJME-02",
+    "region": "PJME",
+    "anomalyId": "ano_PJME_1_2018072212",
+    "timestamp": "Jul 22, 2018 12:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 988.7,
+    "deviationPct": 2.99,
+    "actualMW": 34052.0,
+    "expectedMW": 33063.3,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Jul 22, 2018T12:00:00",
+    "updatedAt": "2026-08-17T12:02:14.629317",
+    "logs": [
+      {
+        "timestamp": "Jul 22, 2018 12:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+988.7 MW, 2.99%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul172018-PJME-03": {
+    "id": "INC-Jul172018-PJME-03",
+    "region": "PJME",
+    "anomalyId": "ano_PJME_2_2018071715",
+    "timestamp": "Jul 17, 2018 15:00",
+    "severity": "CRITICAL",
+    "direction": "Underconsumption Drop",
+    "residualMW": -3328.8,
+    "deviationPct": 6.63,
+    "actualMW": 46917.0,
+    "expectedMW": 50245.8,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "HIGH",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-3328.8 MW below baseline).",
+    "createdAt": "Jul 17, 2018T15:00:00",
+    "updatedAt": "2026-08-17T12:02:14.629317",
+    "logs": [
+      {
+        "timestamp": "Jul 17, 2018 15:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-3,328.8 MW, 6.63%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul172018-PJME-04": {
+    "id": "INC-Jul172018-PJME-04",
+    "region": "PJME",
+    "anomalyId": "ano_PJME_3_2018071714",
+    "timestamp": "Jul 17, 2018 14:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -1947.1,
+    "deviationPct": 3.78,
+    "actualMW": 49579.0,
+    "expectedMW": 51526.1,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-1947.1 MW below baseline).",
+    "createdAt": "Jul 17, 2018T14:00:00",
+    "updatedAt": "2026-08-17T12:02:14.629317",
+    "logs": [
+      {
+        "timestamp": "Jul 17, 2018 14:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-1,947.1 MW, 3.78%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul152018-PJME-05": {
+    "id": "INC-Jul152018-PJME-05",
+    "region": "PJME",
+    "anomalyId": "ano_PJME_4_2018071516",
+    "timestamp": "Jul 15, 2018 16:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 1082.2,
+    "deviationPct": 2.75,
+    "actualMW": 40418.0,
+    "expectedMW": 39335.8,
+    "status": "INVESTIGATING",
+    "assignedTo": "Substation Grid Crew Beta",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Jul 15, 2018T16:00:00",
+    "updatedAt": "2026-08-17T12:02:14.629317",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 16:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+1,082.2 MW, 2.75%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_INVESTIGATING",
+        "message": "Incident moved to INVESTIGATING state."
+      }
+    ]
+  },
+  "INC-Jul152018-PJME-06": {
+    "id": "INC-Jul152018-PJME-06",
+    "region": "PJME",
+    "anomalyId": "ano_PJME_5_2018071512",
+    "timestamp": "Jul 15, 2018 12:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -843.6,
+    "deviationPct": 2.33,
+    "actualMW": 35304.0,
+    "expectedMW": 36147.6,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-843.6 MW below baseline).",
+    "createdAt": "Jul 15, 2018T12:00:00",
+    "updatedAt": "2026-08-17T12:02:14.629317",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 12:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-843.6 MW, 2.33%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul152018-PJME-07": {
+    "id": "INC-Jul152018-PJME-07",
+    "region": "PJME",
+    "anomalyId": "ano_PJME_6_2018071511",
+    "timestamp": "Jul 15, 2018 11:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -1414.4,
+    "deviationPct": 3.9,
+    "actualMW": 34840.0,
+    "expectedMW": 36254.4,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-1414.4 MW below baseline).",
+    "createdAt": "Jul 15, 2018T11:00:00",
+    "updatedAt": "2026-08-17T12:02:14.629317",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 11:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-1,414.4 MW, 3.9%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul092018-PJME-08": {
+    "id": "INC-Jul092018-PJME-08",
+    "region": "PJME",
+    "anomalyId": "ano_PJME_7_2018070920",
+    "timestamp": "Jul 09, 2018 20:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -1376.0,
+    "deviationPct": 3.2,
+    "actualMW": 41662.0,
+    "expectedMW": 43038.0,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-1376.0 MW below baseline).",
+    "createdAt": "Jul 09, 2018T20:00:00",
+    "updatedAt": "2026-08-17T12:02:14.629317",
+    "logs": [
+      {
+        "timestamp": "Jul 09, 2018 20:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-1,376.0 MW, 3.2%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul082018-PJME-09": {
+    "id": "INC-Jul082018-PJME-09",
+    "region": "PJME",
+    "anomalyId": "ano_PJME_8_2018070820",
+    "timestamp": "Jul 08, 2018 20:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -1288.9,
+    "deviationPct": 3.55,
+    "actualMW": 34974.0,
+    "expectedMW": 36262.9,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-1288.9 MW below baseline).",
+    "createdAt": "Jul 08, 2018T20:00:00",
+    "updatedAt": "2026-08-17T12:02:14.629317",
+    "logs": [
+      {
+        "timestamp": "Jul 08, 2018 20:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-1,288.9 MW, 3.55%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul072018-PJME-10": {
+    "id": "INC-Jul072018-PJME-10",
+    "region": "PJME",
+    "anomalyId": "ano_PJME_9_2018070720",
+    "timestamp": "Jul 07, 2018 20:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -940.1,
+    "deviationPct": 2.89,
+    "actualMW": 31614.0,
+    "expectedMW": 32554.1,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-940.1 MW below baseline).",
+    "createdAt": "Jul 07, 2018T20:00:00",
+    "updatedAt": "2026-08-17T12:02:14.629317",
+    "logs": [
+      {
+        "timestamp": "Jul 07, 2018 20:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-940.1 MW, 2.89%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul072018-PJME-11": {
+    "id": "INC-Jul072018-PJME-11",
+    "region": "PJME",
+    "anomalyId": "ano_PJME_10_2018070709",
+    "timestamp": "Jul 07, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -1168.1,
+    "deviationPct": 4.05,
+    "actualMW": 27693.0,
+    "expectedMW": 28861.1,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-1168.1 MW below baseline).",
+    "createdAt": "Jul 07, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.629317",
+    "logs": [
+      {
+        "timestamp": "Jul 07, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-1,168.1 MW, 4.05%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul072018-PJME-12": {
+    "id": "INC-Jul072018-PJME-12",
+    "region": "PJME",
+    "anomalyId": "ano_PJME_11_2018070708",
+    "timestamp": "Jul 07, 2018 08:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -942.6,
+    "deviationPct": 3.44,
+    "actualMW": 26449.0,
+    "expectedMW": 27391.6,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-942.6 MW below baseline).",
+    "createdAt": "Jul 07, 2018T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.629317",
+    "logs": [
+      {
+        "timestamp": "Jul 07, 2018 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-942.6 MW, 3.44%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul162018-AEP-01": {
+    "id": "INC-Jul162018-AEP-01",
+    "region": "AEP",
+    "anomalyId": "ano_AEP_0_2018071617",
+    "timestamp": "Jul 16, 2018 17:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 465.2,
+    "deviationPct": 2.33,
+    "actualMW": 20434.0,
+    "expectedMW": 19968.8,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "High grid stress during peak tariff window (17:00). Unplanned industrial equipment surge.",
+    "createdAt": "Jul 16, 2018T17:00:00",
+    "updatedAt": "2026-08-17T12:02:14.639321",
+    "logs": [
+      {
+        "timestamp": "Jul 16, 2018 17:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+465.2 MW, 2.33%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul082018-AEP-02": {
+    "id": "INC-Jul082018-AEP-02",
+    "region": "AEP",
+    "anomalyId": "ano_AEP_1_2018070806",
+    "timestamp": "Jul 08, 2018 06:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -299.2,
+    "deviationPct": 2.81,
+    "actualMW": 10343.0,
+    "expectedMW": 10642.2,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-299.2 MW below baseline).",
+    "createdAt": "Jul 08, 2018T06:00:00",
+    "updatedAt": "2026-08-17T12:02:14.639321",
+    "logs": [
+      {
+        "timestamp": "Jul 08, 2018 06:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-299.2 MW, 2.81%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul072018-AEP-03": {
+    "id": "INC-Jul072018-AEP-03",
+    "region": "AEP",
+    "anomalyId": "ano_AEP_2_2018070715",
+    "timestamp": "Jul 07, 2018 15:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 356.0,
+    "deviationPct": 2.31,
+    "actualMW": 15789.0,
+    "expectedMW": 15433.0,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Jul 07, 2018T15:00:00",
+    "updatedAt": "2026-08-17T12:02:14.639321",
+    "logs": [
+      {
+        "timestamp": "Jul 07, 2018 15:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+356.0 MW, 2.31%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul062018-AEP-04": {
+    "id": "INC-Jul062018-AEP-04",
+    "region": "AEP",
+    "anomalyId": "ano_AEP_3_2018070609",
+    "timestamp": "Jul 06, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -355.0,
+    "deviationPct": 2.2,
+    "actualMW": 15804.0,
+    "expectedMW": 16159.0,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-355.0 MW below baseline).",
+    "createdAt": "Jul 06, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.639321",
+    "logs": [
+      {
+        "timestamp": "Jul 06, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-355.0 MW, 2.2%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul042018-AEP-05": {
+    "id": "INC-Jul042018-AEP-05",
+    "region": "AEP",
+    "anomalyId": "ano_AEP_4_2018070423",
+    "timestamp": "Jul 04, 2018 23:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 653.1,
+    "deviationPct": 4.18,
+    "actualMW": 16291.0,
+    "expectedMW": 15637.9,
+    "status": "INVESTIGATING",
+    "assignedTo": "Substation Grid Crew Beta",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 653.1 MW (4.2% over expected).",
+    "createdAt": "Jul 04, 2018T23:00:00",
+    "updatedAt": "2026-08-17T12:02:14.639321",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 23:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+653.1 MW, 4.18%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_INVESTIGATING",
+        "message": "Incident moved to INVESTIGATING state."
+      }
+    ]
+  },
+  "INC-Jul042018-AEP-06": {
+    "id": "INC-Jul042018-AEP-06",
+    "region": "AEP",
+    "anomalyId": "ano_AEP_5_2018070422",
+    "timestamp": "Jul 04, 2018 22:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 364.2,
+    "deviationPct": 2.18,
+    "actualMW": 17086.0,
+    "expectedMW": 16721.8,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 364.2 MW (2.2% over expected).",
+    "createdAt": "Jul 04, 2018T22:00:00",
+    "updatedAt": "2026-08-17T12:02:14.640321",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 22:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+364.2 MW, 2.18%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-AEP-07": {
+    "id": "INC-Jul042018-AEP-07",
+    "region": "AEP",
+    "anomalyId": "ano_AEP_6_2018070410",
+    "timestamp": "Jul 04, 2018 10:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 447.7,
+    "deviationPct": 2.57,
+    "actualMW": 17847.0,
+    "expectedMW": 17399.3,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 447.7 MW (2.6% over expected).",
+    "createdAt": "Jul 04, 2018T10:00:00",
+    "updatedAt": "2026-08-17T12:02:14.640321",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 10:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+447.7 MW, 2.57%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-AEP-08": {
+    "id": "INC-Jul042018-AEP-08",
+    "region": "AEP",
+    "anomalyId": "ano_AEP_7_2018070409",
+    "timestamp": "Jul 04, 2018 09:00",
+    "severity": "CRITICAL",
+    "direction": "Overconsumption Spike",
+    "residualMW": 666.9,
+    "deviationPct": 4.27,
+    "actualMW": 16291.0,
+    "expectedMW": 15624.1,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "HIGH",
+    "rootCauseDescription": "Load exceeded forecast by 666.9 MW (4.3% over expected).",
+    "createdAt": "Jul 04, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.640321",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+666.9 MW, 4.27%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-AEP-09": {
+    "id": "INC-Jul042018-AEP-09",
+    "region": "AEP",
+    "anomalyId": "ano_AEP_8_2018070406",
+    "timestamp": "Jul 04, 2018 06:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -536.8,
+    "deviationPct": 4.03,
+    "actualMW": 12789.0,
+    "expectedMW": 13325.8,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-536.8 MW below baseline).",
+    "createdAt": "Jul 04, 2018T06:00:00",
+    "updatedAt": "2026-08-17T12:02:14.640321",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 06:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-536.8 MW, 4.03%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-AEP-10": {
+    "id": "INC-Jul042018-AEP-10",
+    "region": "AEP",
+    "anomalyId": "ano_AEP_9_2018070405",
+    "timestamp": "Jul 04, 2018 05:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -493.9,
+    "deviationPct": 3.65,
+    "actualMW": 13036.0,
+    "expectedMW": 13529.9,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-493.9 MW below baseline).",
+    "createdAt": "Jul 04, 2018T05:00:00",
+    "updatedAt": "2026-08-17T12:02:14.640321",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 05:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-493.9 MW, 3.65%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul032018-AEP-11": {
+    "id": "INC-Jul032018-AEP-11",
+    "region": "AEP",
+    "anomalyId": "ano_AEP_10_2018070323",
+    "timestamp": "Jul 03, 2018 23:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 364.9,
+    "deviationPct": 2.23,
+    "actualMW": 16709.0,
+    "expectedMW": 16344.1,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 364.9 MW (2.2% over expected).",
+    "createdAt": "Jul 03, 2018T23:00:00",
+    "updatedAt": "2026-08-17T12:02:14.640321",
+    "logs": [
+      {
+        "timestamp": "Jul 03, 2018 23:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+364.9 MW, 2.23%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul032018-AEP-12": {
+    "id": "INC-Jul032018-AEP-12",
+    "region": "AEP",
+    "anomalyId": "ano_AEP_11_2018070320",
+    "timestamp": "Jul 03, 2018 20:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -496.0,
+    "deviationPct": 2.48,
+    "actualMW": 19543.0,
+    "expectedMW": 20039.0,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-496.0 MW below baseline).",
+    "createdAt": "Jul 03, 2018T20:00:00",
+    "updatedAt": "2026-08-17T12:02:14.640321",
+    "logs": [
+      {
+        "timestamp": "Jul 03, 2018 20:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-496.0 MW, 2.48%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul222018-DOM-01": {
+    "id": "INC-Jul222018-DOM-01",
+    "region": "DOM",
+    "anomalyId": "ano_DOM_0_2018072212",
+    "timestamp": "Jul 22, 2018 12:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 557.3,
+    "deviationPct": 4.87,
+    "actualMW": 11989.0,
+    "expectedMW": 11431.7,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Jul 22, 2018T12:00:00",
+    "updatedAt": "2026-08-17T12:02:14.649321",
+    "logs": [
+      {
+        "timestamp": "Jul 22, 2018 12:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+557.3 MW, 4.87%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul162018-DOM-02": {
+    "id": "INC-Jul162018-DOM-02",
+    "region": "DOM",
+    "anomalyId": "ano_DOM_1_2018071618",
+    "timestamp": "Jul 16, 2018 18:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 432.7,
+    "deviationPct": 2.62,
+    "actualMW": 16941.0,
+    "expectedMW": 16508.3,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "High grid stress during peak tariff window (18:00). Unplanned industrial equipment surge.",
+    "createdAt": "Jul 16, 2018T18:00:00",
+    "updatedAt": "2026-08-17T12:02:14.649321",
+    "logs": [
+      {
+        "timestamp": "Jul 16, 2018 18:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+432.7 MW, 2.62%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul152018-DOM-03": {
+    "id": "INC-Jul152018-DOM-03",
+    "region": "DOM",
+    "anomalyId": "ano_DOM_2_2018071519",
+    "timestamp": "Jul 15, 2018 19:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 443.6,
+    "deviationPct": 3.01,
+    "actualMW": 15162.0,
+    "expectedMW": 14718.4,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "High grid stress during peak tariff window (19:00). Unplanned industrial equipment surge.",
+    "createdAt": "Jul 15, 2018T19:00:00",
+    "updatedAt": "2026-08-17T12:02:14.649321",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 19:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+443.6 MW, 3.01%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul152018-DOM-04": {
+    "id": "INC-Jul152018-DOM-04",
+    "region": "DOM",
+    "anomalyId": "ano_DOM_3_2018071518",
+    "timestamp": "Jul 15, 2018 18:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 397.1,
+    "deviationPct": 2.63,
+    "actualMW": 15519.0,
+    "expectedMW": 15121.9,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "High grid stress during peak tariff window (18:00). Unplanned industrial equipment surge.",
+    "createdAt": "Jul 15, 2018T18:00:00",
+    "updatedAt": "2026-08-17T12:02:14.649321",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 18:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+397.1 MW, 2.63%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul072018-DOM-05": {
+    "id": "INC-Jul072018-DOM-05",
+    "region": "DOM",
+    "anomalyId": "ano_DOM_4_2018070709",
+    "timestamp": "Jul 07, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -281.1,
+    "deviationPct": 2.51,
+    "actualMW": 10908.0,
+    "expectedMW": 11189.1,
+    "status": "INVESTIGATING",
+    "assignedTo": "Substation Grid Crew Beta",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-281.1 MW below baseline).",
+    "createdAt": "Jul 07, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.649321",
+    "logs": [
+      {
+        "timestamp": "Jul 07, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-281.1 MW, 2.51%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_INVESTIGATING",
+        "message": "Incident moved to INVESTIGATING state."
+      }
+    ]
+  },
+  "INC-Jul052018-DOM-06": {
+    "id": "INC-Jul052018-DOM-06",
+    "region": "DOM",
+    "anomalyId": "ano_DOM_5_2018070518",
+    "timestamp": "Jul 05, 2018 18:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 524.3,
+    "deviationPct": 3.02,
+    "actualMW": 17878.0,
+    "expectedMW": 17353.7,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "High grid stress during peak tariff window (18:00). Unplanned industrial equipment surge.",
+    "createdAt": "Jul 05, 2018T18:00:00",
+    "updatedAt": "2026-08-17T12:02:14.649321",
+    "logs": [
+      {
+        "timestamp": "Jul 05, 2018 18:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+524.3 MW, 3.02%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-DOM-07": {
+    "id": "INC-Jul042018-DOM-07",
+    "region": "DOM",
+    "anomalyId": "ano_DOM_6_2018070423",
+    "timestamp": "Jul 04, 2018 23:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 359.4,
+    "deviationPct": 2.83,
+    "actualMW": 13048.0,
+    "expectedMW": 12688.6,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 359.4 MW (2.8% over expected).",
+    "createdAt": "Jul 04, 2018T23:00:00",
+    "updatedAt": "2026-08-17T12:02:14.649321",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 23:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+359.4 MW, 2.83%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-DOM-08": {
+    "id": "INC-Jul042018-DOM-08",
+    "region": "DOM",
+    "anomalyId": "ano_DOM_7_2018070422",
+    "timestamp": "Jul 04, 2018 22:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 493.2,
+    "deviationPct": 3.66,
+    "actualMW": 13953.0,
+    "expectedMW": 13459.8,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 493.2 MW (3.7% over expected).",
+    "createdAt": "Jul 04, 2018T22:00:00",
+    "updatedAt": "2026-08-17T12:02:14.649321",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 22:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+493.2 MW, 3.66%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-DOM-09": {
+    "id": "INC-Jul042018-DOM-09",
+    "region": "DOM",
+    "anomalyId": "ano_DOM_8_2018070409",
+    "timestamp": "Jul 04, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 415.8,
+    "deviationPct": 3.1,
+    "actualMW": 13844.0,
+    "expectedMW": 13428.2,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 415.8 MW (3.1% over expected).",
+    "createdAt": "Jul 04, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.649321",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+415.8 MW, 3.1%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul032018-DOM-10": {
+    "id": "INC-Jul032018-DOM-10",
+    "region": "DOM",
+    "anomalyId": "ano_DOM_9_2018070319",
+    "timestamp": "Jul 03, 2018 19:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -505.4,
+    "deviationPct": 2.78,
+    "actualMW": 17692.0,
+    "expectedMW": 18197.4,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-505.4 MW below baseline).",
+    "createdAt": "Jul 03, 2018T19:00:00",
+    "updatedAt": "2026-08-17T12:02:14.649321",
+    "logs": [
+      {
+        "timestamp": "Jul 03, 2018 19:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-505.4 MW, 2.78%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul022018-DOM-11": {
+    "id": "INC-Jul022018-DOM-11",
+    "region": "DOM",
+    "anomalyId": "ano_DOM_10_2018070219",
+    "timestamp": "Jul 02, 2018 19:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 791.4,
+    "deviationPct": 4.43,
+    "actualMW": 18666.0,
+    "expectedMW": 17874.6,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "High grid stress during peak tariff window (19:00). Unplanned industrial equipment surge.",
+    "createdAt": "Jul 02, 2018T19:00:00",
+    "updatedAt": "2026-08-17T12:02:14.649321",
+    "logs": [
+      {
+        "timestamp": "Jul 02, 2018 19:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+791.4 MW, 4.43%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul022018-DOM-12": {
+    "id": "INC-Jul022018-DOM-12",
+    "region": "DOM",
+    "anomalyId": "ano_DOM_11_2018070218",
+    "timestamp": "Jul 02, 2018 18:00",
+    "severity": "CRITICAL",
+    "direction": "Overconsumption Spike",
+    "residualMW": 896.0,
+    "deviationPct": 4.92,
+    "actualMW": 19091.0,
+    "expectedMW": 18195.0,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "HIGH",
+    "rootCauseDescription": "High grid stress during peak tariff window (18:00). Unplanned industrial equipment surge.",
+    "createdAt": "Jul 02, 2018T18:00:00",
+    "updatedAt": "2026-08-17T12:02:14.649321",
+    "logs": [
+      {
+        "timestamp": "Jul 02, 2018 18:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+896.0 MW, 4.92%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul312018-DUQ-01": {
+    "id": "INC-Jul312018-DUQ-01",
+    "region": "DUQ",
+    "anomalyId": "ano_DUQ_0_2018073115",
+    "timestamp": "Jul 31, 2018 15:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -94.6,
+    "deviationPct": 4.46,
+    "actualMW": 2028.0,
+    "expectedMW": 2122.6,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-94.6 MW below baseline).",
+    "createdAt": "Jul 31, 2018T15:00:00",
+    "updatedAt": "2026-08-17T12:02:14.658325",
+    "logs": [
+      {
+        "timestamp": "Jul 31, 2018 15:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-94.6 MW, 4.46%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul312018-DUQ-02": {
+    "id": "INC-Jul312018-DUQ-02",
+    "region": "DUQ",
+    "anomalyId": "ano_DUQ_1_2018073114",
+    "timestamp": "Jul 31, 2018 14:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -98.9,
+    "deviationPct": 4.48,
+    "actualMW": 2108.0,
+    "expectedMW": 2206.9,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-98.9 MW below baseline).",
+    "createdAt": "Jul 31, 2018T14:00:00",
+    "updatedAt": "2026-08-17T12:02:14.658325",
+    "logs": [
+      {
+        "timestamp": "Jul 31, 2018 14:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-98.9 MW, 4.48%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul202018-DUQ-03": {
+    "id": "INC-Jul202018-DUQ-03",
+    "region": "DUQ",
+    "anomalyId": "ano_DUQ_2_2018072009",
+    "timestamp": "Jul 20, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -70.0,
+    "deviationPct": 3.59,
+    "actualMW": 1883.0,
+    "expectedMW": 1953.0,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-70.0 MW below baseline).",
+    "createdAt": "Jul 20, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.658325",
+    "logs": [
+      {
+        "timestamp": "Jul 20, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-70.0 MW, 3.59%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul202018-DUQ-04": {
+    "id": "INC-Jul202018-DUQ-04",
+    "region": "DUQ",
+    "anomalyId": "ano_DUQ_3_2018072008",
+    "timestamp": "Jul 20, 2018 08:00",
+    "severity": "CRITICAL",
+    "direction": "Overconsumption Spike",
+    "residualMW": 126.2,
+    "deviationPct": 7.34,
+    "actualMW": 1847.0,
+    "expectedMW": 1720.8,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "HIGH",
+    "rootCauseDescription": "Load exceeded forecast by 126.2 MW (7.3% over expected).",
+    "createdAt": "Jul 20, 2018T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.658325",
+    "logs": [
+      {
+        "timestamp": "Jul 20, 2018 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+126.2 MW, 7.34%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul172018-DUQ-05": {
+    "id": "INC-Jul172018-DUQ-05",
+    "region": "DUQ",
+    "anomalyId": "ano_DUQ_4_2018071720",
+    "timestamp": "Jul 17, 2018 20:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -73.2,
+    "deviationPct": 3.48,
+    "actualMW": 2029.0,
+    "expectedMW": 2102.2,
+    "status": "INVESTIGATING",
+    "assignedTo": "Substation Grid Crew Beta",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-73.2 MW below baseline).",
+    "createdAt": "Jul 17, 2018T20:00:00",
+    "updatedAt": "2026-08-17T12:02:14.658325",
+    "logs": [
+      {
+        "timestamp": "Jul 17, 2018 20:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-73.2 MW, 3.48%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_INVESTIGATING",
+        "message": "Incident moved to INVESTIGATING state."
+      }
+    ]
+  },
+  "INC-Jul162018-DUQ-06": {
+    "id": "INC-Jul162018-DUQ-06",
+    "region": "DUQ",
+    "anomalyId": "ano_DUQ_5_2018071621",
+    "timestamp": "Jul 16, 2018 21:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -79.0,
+    "deviationPct": 3.3,
+    "actualMW": 2313.0,
+    "expectedMW": 2392.0,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-79.0 MW below baseline).",
+    "createdAt": "Jul 16, 2018T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.658325",
+    "logs": [
+      {
+        "timestamp": "Jul 16, 2018 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-79.0 MW, 3.3%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul152018-DUQ-07": {
+    "id": "INC-Jul152018-DUQ-07",
+    "region": "DUQ",
+    "anomalyId": "ano_DUQ_6_2018071517",
+    "timestamp": "Jul 15, 2018 17:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -111.5,
+    "deviationPct": 4.59,
+    "actualMW": 2317.0,
+    "expectedMW": 2428.5,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-111.5 MW below baseline).",
+    "createdAt": "Jul 15, 2018T17:00:00",
+    "updatedAt": "2026-08-17T12:02:14.658325",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 17:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-111.5 MW, 4.59%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul152018-DUQ-08": {
+    "id": "INC-Jul152018-DUQ-08",
+    "region": "DUQ",
+    "anomalyId": "ano_DUQ_7_2018071516",
+    "timestamp": "Jul 15, 2018 16:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -98.9,
+    "deviationPct": 3.92,
+    "actualMW": 2425.0,
+    "expectedMW": 2523.9,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-98.9 MW below baseline).",
+    "createdAt": "Jul 15, 2018T16:00:00",
+    "updatedAt": "2026-08-17T12:02:14.658325",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 16:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-98.9 MW, 3.92%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul142018-DUQ-09": {
+    "id": "INC-Jul142018-DUQ-09",
+    "region": "DUQ",
+    "anomalyId": "ano_DUQ_8_2018071407",
+    "timestamp": "Jul 14, 2018 07:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 48.6,
+    "deviationPct": 3.22,
+    "actualMW": 1560.0,
+    "expectedMW": 1511.4,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Jul 14, 2018T07:00:00",
+    "updatedAt": "2026-08-17T12:02:14.658325",
+    "logs": [
+      {
+        "timestamp": "Jul 14, 2018 07:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+48.6 MW, 3.22%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul092018-DUQ-10": {
+    "id": "INC-Jul092018-DUQ-10",
+    "region": "DUQ",
+    "anomalyId": "ano_DUQ_9_2018070920",
+    "timestamp": "Jul 09, 2018 20:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -90.3,
+    "deviationPct": 3.98,
+    "actualMW": 2179.0,
+    "expectedMW": 2269.3,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-90.3 MW below baseline).",
+    "createdAt": "Jul 09, 2018T20:00:00",
+    "updatedAt": "2026-08-17T12:02:14.658325",
+    "logs": [
+      {
+        "timestamp": "Jul 09, 2018 20:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-90.3 MW, 3.98%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul082018-DUQ-11": {
+    "id": "INC-Jul082018-DUQ-11",
+    "region": "DUQ",
+    "anomalyId": "ano_DUQ_10_2018070820",
+    "timestamp": "Jul 08, 2018 20:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -69.9,
+    "deviationPct": 3.58,
+    "actualMW": 1885.0,
+    "expectedMW": 1954.9,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-69.9 MW below baseline).",
+    "createdAt": "Jul 08, 2018T20:00:00",
+    "updatedAt": "2026-08-17T12:02:14.658325",
+    "logs": [
+      {
+        "timestamp": "Jul 08, 2018 20:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-69.9 MW, 3.58%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul052018-DUQ-12": {
+    "id": "INC-Jul052018-DUQ-12",
+    "region": "DUQ",
+    "anomalyId": "ano_DUQ_11_2018070516",
+    "timestamp": "Jul 05, 2018 16:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -82.5,
+    "deviationPct": 3.31,
+    "actualMW": 2410.0,
+    "expectedMW": 2492.5,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-82.5 MW below baseline).",
+    "createdAt": "Jul 05, 2018T16:00:00",
+    "updatedAt": "2026-08-17T12:02:14.658325",
+    "logs": [
+      {
+        "timestamp": "Jul 05, 2018 16:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-82.5 MW, 3.31%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Aug022018-FE-01": {
+    "id": "INC-Aug022018-FE-01",
+    "region": "FE",
+    "anomalyId": "ano_FE_0_2018080211",
+    "timestamp": "Aug 02, 2018 11:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 296.8,
+    "deviationPct": 3.32,
+    "actualMW": 9242.0,
+    "expectedMW": 8945.2,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 296.8 MW (3.3% over expected).",
+    "createdAt": "Aug 02, 2018T11:00:00",
+    "updatedAt": "2026-08-17T12:02:14.662330",
+    "logs": [
+      {
+        "timestamp": "Aug 02, 2018 11:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+296.8 MW, 3.32%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul262018-FE-02": {
+    "id": "INC-Jul262018-FE-02",
+    "region": "FE",
+    "anomalyId": "ano_FE_1_2018072619",
+    "timestamp": "Jul 26, 2018 19:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -293.7,
+    "deviationPct": 2.85,
+    "actualMW": 10028.0,
+    "expectedMW": 10321.7,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-293.7 MW below baseline).",
+    "createdAt": "Jul 26, 2018T19:00:00",
+    "updatedAt": "2026-08-17T12:02:14.662330",
+    "logs": [
+      {
+        "timestamp": "Jul 26, 2018 19:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-293.7 MW, 2.85%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul262018-FE-03": {
+    "id": "INC-Jul262018-FE-03",
+    "region": "FE",
+    "anomalyId": "ano_FE_2_2018072618",
+    "timestamp": "Jul 26, 2018 18:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -248.1,
+    "deviationPct": 2.3,
+    "actualMW": 10559.0,
+    "expectedMW": 10807.1,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-248.1 MW below baseline).",
+    "createdAt": "Jul 26, 2018T18:00:00",
+    "updatedAt": "2026-08-17T12:02:14.662330",
+    "logs": [
+      {
+        "timestamp": "Jul 26, 2018 18:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-248.1 MW, 2.3%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul252018-FE-04": {
+    "id": "INC-Jul252018-FE-04",
+    "region": "FE",
+    "anomalyId": "ano_FE_3_2018072520",
+    "timestamp": "Jul 25, 2018 20:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -310.6,
+    "deviationPct": 2.98,
+    "actualMW": 10105.0,
+    "expectedMW": 10415.6,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-310.6 MW below baseline).",
+    "createdAt": "Jul 25, 2018T20:00:00",
+    "updatedAt": "2026-08-17T12:02:14.662330",
+    "logs": [
+      {
+        "timestamp": "Jul 25, 2018 20:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-310.6 MW, 2.98%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul212018-FE-05": {
+    "id": "INC-Jul212018-FE-05",
+    "region": "FE",
+    "anomalyId": "ano_FE_4_2018072109",
+    "timestamp": "Jul 21, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -176.1,
+    "deviationPct": 2.38,
+    "actualMW": 7228.0,
+    "expectedMW": 7404.1,
+    "status": "INVESTIGATING",
+    "assignedTo": "Substation Grid Crew Beta",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-176.1 MW below baseline).",
+    "createdAt": "Jul 21, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.662330",
+    "logs": [
+      {
+        "timestamp": "Jul 21, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-176.1 MW, 2.38%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_INVESTIGATING",
+        "message": "Incident moved to INVESTIGATING state."
+      }
+    ]
+  },
+  "INC-Jul202018-FE-06": {
+    "id": "INC-Jul202018-FE-06",
+    "region": "FE",
+    "anomalyId": "ano_FE_5_2018072013",
+    "timestamp": "Jul 20, 2018 13:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -372.8,
+    "deviationPct": 3.53,
+    "actualMW": 10186.0,
+    "expectedMW": 10558.8,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-372.8 MW below baseline).",
+    "createdAt": "Jul 20, 2018T13:00:00",
+    "updatedAt": "2026-08-17T12:02:14.662330",
+    "logs": [
+      {
+        "timestamp": "Jul 20, 2018 13:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-372.8 MW, 3.53%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul172018-FE-07": {
+    "id": "INC-Jul172018-FE-07",
+    "region": "FE",
+    "anomalyId": "ano_FE_6_2018071716",
+    "timestamp": "Jul 17, 2018 16:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -321.0,
+    "deviationPct": 2.81,
+    "actualMW": 11104.0,
+    "expectedMW": 11425.0,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-321.0 MW below baseline).",
+    "createdAt": "Jul 17, 2018T16:00:00",
+    "updatedAt": "2026-08-17T12:02:14.663330",
+    "logs": [
+      {
+        "timestamp": "Jul 17, 2018 16:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-321.0 MW, 2.81%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul172018-FE-08": {
+    "id": "INC-Jul172018-FE-08",
+    "region": "FE",
+    "anomalyId": "ano_FE_7_2018071715",
+    "timestamp": "Jul 17, 2018 15:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -265.3,
+    "deviationPct": 2.31,
+    "actualMW": 11216.0,
+    "expectedMW": 11481.3,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-265.3 MW below baseline).",
+    "createdAt": "Jul 17, 2018T15:00:00",
+    "updatedAt": "2026-08-17T12:02:14.663330",
+    "logs": [
+      {
+        "timestamp": "Jul 17, 2018 15:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-265.3 MW, 2.31%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul162018-FE-09": {
+    "id": "INC-Jul162018-FE-09",
+    "region": "FE",
+    "anomalyId": "ano_FE_8_2018071615",
+    "timestamp": "Jul 16, 2018 15:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -472.0,
+    "deviationPct": 3.73,
+    "actualMW": 12176.0,
+    "expectedMW": 12648.0,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-472.0 MW below baseline).",
+    "createdAt": "Jul 16, 2018T15:00:00",
+    "updatedAt": "2026-08-17T12:02:14.663330",
+    "logs": [
+      {
+        "timestamp": "Jul 16, 2018 15:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-472.0 MW, 3.73%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul162018-FE-10": {
+    "id": "INC-Jul162018-FE-10",
+    "region": "FE",
+    "anomalyId": "ano_FE_9_2018071600",
+    "timestamp": "Jul 16, 2018 00:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 324.6,
+    "deviationPct": 3.87,
+    "actualMW": 8720.0,
+    "expectedMW": 8395.4,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 324.6 MW (3.9% over expected).",
+    "createdAt": "Jul 16, 2018T00:00:00",
+    "updatedAt": "2026-08-17T12:02:14.663330",
+    "logs": [
+      {
+        "timestamp": "Jul 16, 2018 00:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+324.6 MW, 3.87%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul152018-FE-11": {
+    "id": "INC-Jul152018-FE-11",
+    "region": "FE",
+    "anomalyId": "ano_FE_10_2018071510",
+    "timestamp": "Jul 15, 2018 10:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 199.9,
+    "deviationPct": 2.16,
+    "actualMW": 9474.0,
+    "expectedMW": 9274.1,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Jul 15, 2018T10:00:00",
+    "updatedAt": "2026-08-17T12:02:14.663330",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 10:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+199.9 MW, 2.16%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul152018-FE-12": {
+    "id": "INC-Jul152018-FE-12",
+    "region": "FE",
+    "anomalyId": "ano_FE_11_2018071509",
+    "timestamp": "Jul 15, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 287.4,
+    "deviationPct": 3.43,
+    "actualMW": 8671.0,
+    "expectedMW": 8383.6,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Jul 15, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.663330",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+287.4 MW, 3.43%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul162018-COMED-01": {
+    "id": "INC-Jul162018-COMED-01",
+    "region": "COMED",
+    "anomalyId": "ano_COMED_0_2018071621",
+    "timestamp": "Jul 16, 2018 21:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -373.7,
+    "deviationPct": 2.18,
+    "actualMW": 16736.0,
+    "expectedMW": 17109.7,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-373.7 MW below baseline).",
+    "createdAt": "Jul 16, 2018T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.666859",
+    "logs": [
+      {
+        "timestamp": "Jul 16, 2018 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-373.7 MW, 2.18%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul152018-COMED-02": {
+    "id": "INC-Jul152018-COMED-02",
+    "region": "COMED",
+    "anomalyId": "ano_COMED_1_2018071508",
+    "timestamp": "Jul 15, 2018 08:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 429.2,
+    "deviationPct": 4.08,
+    "actualMW": 10940.0,
+    "expectedMW": 10510.8,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Jul 15, 2018T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.666859",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+429.2 MW, 4.08%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul142018-COMED-03": {
+    "id": "INC-Jul142018-COMED-03",
+    "region": "COMED",
+    "anomalyId": "ano_COMED_2_2018071417",
+    "timestamp": "Jul 14, 2018 17:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 305.6,
+    "deviationPct": 2.13,
+    "actualMW": 14653.0,
+    "expectedMW": 14347.4,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "High grid stress during peak tariff window (17:00). Unplanned industrial equipment surge.",
+    "createdAt": "Jul 14, 2018T17:00:00",
+    "updatedAt": "2026-08-17T12:02:14.666859",
+    "logs": [
+      {
+        "timestamp": "Jul 14, 2018 17:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+305.6 MW, 2.13%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul142018-COMED-04": {
+    "id": "INC-Jul142018-COMED-04",
+    "region": "COMED",
+    "anomalyId": "ano_COMED_3_2018071408",
+    "timestamp": "Jul 14, 2018 08:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -322.0,
+    "deviationPct": 2.65,
+    "actualMW": 11851.0,
+    "expectedMW": 12173.0,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-322.0 MW below baseline).",
+    "createdAt": "Jul 14, 2018T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.666859",
+    "logs": [
+      {
+        "timestamp": "Jul 14, 2018 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-322.0 MW, 2.65%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul142018-COMED-05": {
+    "id": "INC-Jul142018-COMED-05",
+    "region": "COMED",
+    "anomalyId": "ano_COMED_4_2018071407",
+    "timestamp": "Jul 14, 2018 07:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -314.4,
+    "deviationPct": 2.66,
+    "actualMW": 11505.0,
+    "expectedMW": 11819.4,
+    "status": "INVESTIGATING",
+    "assignedTo": "Substation Grid Crew Beta",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-314.4 MW below baseline).",
+    "createdAt": "Jul 14, 2018T07:00:00",
+    "updatedAt": "2026-08-17T12:02:14.666859",
+    "logs": [
+      {
+        "timestamp": "Jul 14, 2018 07:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-314.4 MW, 2.66%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_INVESTIGATING",
+        "message": "Incident moved to INVESTIGATING state."
+      }
+    ]
+  },
+  "INC-Jul132018-COMED-06": {
+    "id": "INC-Jul132018-COMED-06",
+    "region": "COMED",
+    "anomalyId": "ano_COMED_5_2018071323",
+    "timestamp": "Jul 13, 2018 23:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 386.2,
+    "deviationPct": 2.54,
+    "actualMW": 15608.0,
+    "expectedMW": 15221.8,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 386.2 MW (2.5% over expected).",
+    "createdAt": "Jul 13, 2018T23:00:00",
+    "updatedAt": "2026-08-17T12:02:14.666859",
+    "logs": [
+      {
+        "timestamp": "Jul 13, 2018 23:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+386.2 MW, 2.54%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul132018-COMED-07": {
+    "id": "INC-Jul132018-COMED-07",
+    "region": "COMED",
+    "anomalyId": "ano_COMED_6_2018071322",
+    "timestamp": "Jul 13, 2018 22:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -367.0,
+    "deviationPct": 2.15,
+    "actualMW": 16735.0,
+    "expectedMW": 17102.0,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-367.0 MW below baseline).",
+    "createdAt": "Jul 13, 2018T22:00:00",
+    "updatedAt": "2026-08-17T12:02:14.666859",
+    "logs": [
+      {
+        "timestamp": "Jul 13, 2018 22:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-367.0 MW, 2.15%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul132018-COMED-08": {
+    "id": "INC-Jul132018-COMED-08",
+    "region": "COMED",
+    "anomalyId": "ano_COMED_7_2018071321",
+    "timestamp": "Jul 13, 2018 21:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -580.5,
+    "deviationPct": 3.21,
+    "actualMW": 17525.0,
+    "expectedMW": 18105.5,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-580.5 MW below baseline).",
+    "createdAt": "Jul 13, 2018T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.666859",
+    "logs": [
+      {
+        "timestamp": "Jul 13, 2018 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-580.5 MW, 3.21%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul132018-COMED-09": {
+    "id": "INC-Jul132018-COMED-09",
+    "region": "COMED",
+    "anomalyId": "ano_COMED_8_2018071317",
+    "timestamp": "Jul 13, 2018 17:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 679.1,
+    "deviationPct": 3.56,
+    "actualMW": 19773.0,
+    "expectedMW": 19093.9,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "High grid stress during peak tariff window (17:00). Unplanned industrial equipment surge.",
+    "createdAt": "Jul 13, 2018T17:00:00",
+    "updatedAt": "2026-08-17T12:02:14.666859",
+    "logs": [
+      {
+        "timestamp": "Jul 13, 2018 17:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+679.1 MW, 3.56%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul132018-COMED-10": {
+    "id": "INC-Jul132018-COMED-10",
+    "region": "COMED",
+    "anomalyId": "ano_COMED_9_2018071300",
+    "timestamp": "Jul 13, 2018 00:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 357.0,
+    "deviationPct": 2.75,
+    "actualMW": 13357.0,
+    "expectedMW": 13000.0,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 357.0 MW (2.7% over expected).",
+    "createdAt": "Jul 13, 2018T00:00:00",
+    "updatedAt": "2026-08-17T12:02:14.666859",
+    "logs": [
+      {
+        "timestamp": "Jul 13, 2018 00:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+357.0 MW, 2.75%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul082018-COMED-11": {
+    "id": "INC-Jul082018-COMED-11",
+    "region": "COMED",
+    "anomalyId": "ano_COMED_10_2018070821",
+    "timestamp": "Jul 08, 2018 21:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -437.5,
+    "deviationPct": 3.04,
+    "actualMW": 13953.0,
+    "expectedMW": 14390.5,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-437.5 MW below baseline).",
+    "createdAt": "Jul 08, 2018T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.666859",
+    "logs": [
+      {
+        "timestamp": "Jul 08, 2018 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-437.5 MW, 3.04%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul072018-COMED-12": {
+    "id": "INC-Jul072018-COMED-12",
+    "region": "COMED",
+    "anomalyId": "ano_COMED_11_2018070721",
+    "timestamp": "Jul 07, 2018 21:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -401.9,
+    "deviationPct": 3.26,
+    "actualMW": 11924.0,
+    "expectedMW": 12325.9,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-401.9 MW below baseline).",
+    "createdAt": "Jul 07, 2018T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.666859",
+    "logs": [
+      {
+        "timestamp": "Jul 07, 2018 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-401.9 MW, 3.26%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul222018-DAYTON-01": {
+    "id": "INC-Jul222018-DAYTON-01",
+    "region": "DAYTON",
+    "anomalyId": "ano_DAYTON_0_2018072220",
+    "timestamp": "Jul 22, 2018 20:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -69.1,
+    "deviationPct": 3.34,
+    "actualMW": 2001.0,
+    "expectedMW": 2070.1,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-69.1 MW below baseline).",
+    "createdAt": "Jul 22, 2018T20:00:00",
+    "updatedAt": "2026-08-17T12:02:14.670859",
+    "logs": [
+      {
+        "timestamp": "Jul 22, 2018 20:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-69.1 MW, 3.34%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul212018-DAYTON-02": {
+    "id": "INC-Jul212018-DAYTON-02",
+    "region": "DAYTON",
+    "anomalyId": "ano_DAYTON_1_2018072108",
+    "timestamp": "Jul 21, 2018 08:00",
+    "severity": "CRITICAL",
+    "direction": "Underconsumption Drop",
+    "residualMW": -77.2,
+    "deviationPct": 4.76,
+    "actualMW": 1544.0,
+    "expectedMW": 1621.2,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "HIGH",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-77.2 MW below baseline).",
+    "createdAt": "Jul 21, 2018T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.670859",
+    "logs": [
+      {
+        "timestamp": "Jul 21, 2018 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-77.2 MW, 4.76%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul202018-DAYTON-03": {
+    "id": "INC-Jul202018-DAYTON-03",
+    "region": "DAYTON",
+    "anomalyId": "ano_DAYTON_2_2018072013",
+    "timestamp": "Jul 20, 2018 13:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -83.8,
+    "deviationPct": 3.64,
+    "actualMW": 2218.0,
+    "expectedMW": 2301.8,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-83.8 MW below baseline).",
+    "createdAt": "Jul 20, 2018T13:00:00",
+    "updatedAt": "2026-08-17T12:02:14.670859",
+    "logs": [
+      {
+        "timestamp": "Jul 20, 2018 13:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-83.8 MW, 3.64%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul162018-DAYTON-04": {
+    "id": "INC-Jul162018-DAYTON-04",
+    "region": "DAYTON",
+    "anomalyId": "ano_DAYTON_3_2018071614",
+    "timestamp": "Jul 16, 2018 14:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -101.0,
+    "deviationPct": 3.25,
+    "actualMW": 3010.0,
+    "expectedMW": 3111.0,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-101.0 MW below baseline).",
+    "createdAt": "Jul 16, 2018T14:00:00",
+    "updatedAt": "2026-08-17T12:02:14.670859",
+    "logs": [
+      {
+        "timestamp": "Jul 16, 2018 14:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-101.0 MW, 3.25%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul152018-DAYTON-05": {
+    "id": "INC-Jul152018-DAYTON-05",
+    "region": "DAYTON",
+    "anomalyId": "ano_DAYTON_4_2018071518",
+    "timestamp": "Jul 15, 2018 18:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -87.9,
+    "deviationPct": 3.2,
+    "actualMW": 2664.0,
+    "expectedMW": 2751.9,
+    "status": "INVESTIGATING",
+    "assignedTo": "Substation Grid Crew Beta",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-87.9 MW below baseline).",
+    "createdAt": "Jul 15, 2018T18:00:00",
+    "updatedAt": "2026-08-17T12:02:14.670859",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 18:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-87.9 MW, 3.2%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_INVESTIGATING",
+        "message": "Incident moved to INVESTIGATING state."
+      }
+    ]
+  },
+  "INC-Jul152018-DAYTON-06": {
+    "id": "INC-Jul152018-DAYTON-06",
+    "region": "DAYTON",
+    "anomalyId": "ano_DAYTON_5_2018071509",
+    "timestamp": "Jul 15, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -63.7,
+    "deviationPct": 3.34,
+    "actualMW": 1845.0,
+    "expectedMW": 1908.7,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-63.7 MW below baseline).",
+    "createdAt": "Jul 15, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.670859",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-63.7 MW, 3.34%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul132018-DAYTON-07": {
+    "id": "INC-Jul132018-DAYTON-07",
+    "region": "DAYTON",
+    "anomalyId": "ano_DAYTON_6_2018071321",
+    "timestamp": "Jul 13, 2018 21:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -91.5,
+    "deviationPct": 3.48,
+    "actualMW": 2541.0,
+    "expectedMW": 2632.5,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-91.5 MW below baseline).",
+    "createdAt": "Jul 13, 2018T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.670859",
+    "logs": [
+      {
+        "timestamp": "Jul 13, 2018 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-91.5 MW, 3.48%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul082018-DAYTON-08": {
+    "id": "INC-Jul082018-DAYTON-08",
+    "region": "DAYTON",
+    "anomalyId": "ano_DAYTON_7_2018070821",
+    "timestamp": "Jul 08, 2018 21:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -54.8,
+    "deviationPct": 2.34,
+    "actualMW": 2285.0,
+    "expectedMW": 2339.8,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-54.8 MW below baseline).",
+    "createdAt": "Jul 08, 2018T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.670859",
+    "logs": [
+      {
+        "timestamp": "Jul 08, 2018 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-54.8 MW, 2.34%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul072018-DAYTON-09": {
+    "id": "INC-Jul072018-DAYTON-09",
+    "region": "DAYTON",
+    "anomalyId": "ano_DAYTON_8_2018070721",
+    "timestamp": "Jul 07, 2018 21:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -79.7,
+    "deviationPct": 4.09,
+    "actualMW": 1871.0,
+    "expectedMW": 1950.7,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-79.7 MW below baseline).",
+    "createdAt": "Jul 07, 2018T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.670859",
+    "logs": [
+      {
+        "timestamp": "Jul 07, 2018 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-79.7 MW, 4.09%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul062018-DAYTON-10": {
+    "id": "INC-Jul062018-DAYTON-10",
+    "region": "DAYTON",
+    "anomalyId": "ano_DAYTON_9_2018070621",
+    "timestamp": "Jul 06, 2018 21:00",
+    "severity": "CRITICAL",
+    "direction": "Underconsumption Drop",
+    "residualMW": -95.2,
+    "deviationPct": 4.6,
+    "actualMW": 1973.0,
+    "expectedMW": 2068.2,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "HIGH",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-95.2 MW below baseline).",
+    "createdAt": "Jul 06, 2018T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.670859",
+    "logs": [
+      {
+        "timestamp": "Jul 06, 2018 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-95.2 MW, 4.6%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul062018-DAYTON-11": {
+    "id": "INC-Jul062018-DAYTON-11",
+    "region": "DAYTON",
+    "anomalyId": "ano_DAYTON_10_2018070609",
+    "timestamp": "Jul 06, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -80.2,
+    "deviationPct": 3.63,
+    "actualMW": 2128.0,
+    "expectedMW": 2208.2,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-80.2 MW below baseline).",
+    "createdAt": "Jul 06, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.670859",
+    "logs": [
+      {
+        "timestamp": "Jul 06, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-80.2 MW, 3.63%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul052018-DAYTON-12": {
+    "id": "INC-Jul052018-DAYTON-12",
+    "region": "DAYTON",
+    "anomalyId": "ano_DAYTON_11_2018070519",
+    "timestamp": "Jul 05, 2018 19:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -67.7,
+    "deviationPct": 2.43,
+    "actualMW": 2717.0,
+    "expectedMW": 2784.7,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-67.7 MW below baseline).",
+    "createdAt": "Jul 05, 2018T19:00:00",
+    "updatedAt": "2026-08-17T12:02:14.670859",
+    "logs": [
+      {
+        "timestamp": "Jul 05, 2018 19:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-67.7 MW, 2.43%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul232018-DEOK-01": {
+    "id": "INC-Jul232018-DEOK-01",
+    "region": "DEOK",
+    "anomalyId": "ano_DEOK_0_2018072305",
+    "timestamp": "Jul 23, 2018 05:00",
+    "severity": "CRITICAL",
+    "direction": "Underconsumption Drop",
+    "residualMW": -170.0,
+    "deviationPct": 6.34,
+    "actualMW": 2510.0,
+    "expectedMW": 2680.0,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "HIGH",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-170.0 MW below baseline).",
+    "createdAt": "Jul 23, 2018T05:00:00",
+    "updatedAt": "2026-08-17T12:02:14.675376",
+    "logs": [
+      {
+        "timestamp": "Jul 23, 2018 05:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-170.0 MW, 6.34%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul212018-DEOK-02": {
+    "id": "INC-Jul212018-DEOK-02",
+    "region": "DEOK",
+    "anomalyId": "ano_DEOK_1_2018072111",
+    "timestamp": "Jul 21, 2018 11:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 99.3,
+    "deviationPct": 3.26,
+    "actualMW": 3147.0,
+    "expectedMW": 3047.7,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Jul 21, 2018T11:00:00",
+    "updatedAt": "2026-08-17T12:02:14.675376",
+    "logs": [
+      {
+        "timestamp": "Jul 21, 2018 11:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+99.3 MW, 3.26%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul212018-DEOK-03": {
+    "id": "INC-Jul212018-DEOK-03",
+    "region": "DEOK",
+    "anomalyId": "ano_DEOK_2_2018072108",
+    "timestamp": "Jul 21, 2018 08:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 111.4,
+    "deviationPct": 4.35,
+    "actualMW": 2673.0,
+    "expectedMW": 2561.6,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Jul 21, 2018T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.675376",
+    "logs": [
+      {
+        "timestamp": "Jul 21, 2018 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+111.4 MW, 4.35%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul212018-DEOK-04": {
+    "id": "INC-Jul212018-DEOK-04",
+    "region": "DEOK",
+    "anomalyId": "ano_DEOK_3_2018072107",
+    "timestamp": "Jul 21, 2018 07:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -98.4,
+    "deviationPct": 3.93,
+    "actualMW": 2404.0,
+    "expectedMW": 2502.4,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-98.4 MW below baseline).",
+    "createdAt": "Jul 21, 2018T07:00:00",
+    "updatedAt": "2026-08-17T12:02:14.675376",
+    "logs": [
+      {
+        "timestamp": "Jul 21, 2018 07:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-98.4 MW, 3.93%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul202018-DEOK-05": {
+    "id": "INC-Jul202018-DEOK-05",
+    "region": "DEOK",
+    "anomalyId": "ano_DEOK_4_2018072015",
+    "timestamp": "Jul 20, 2018 15:00",
+    "severity": "CRITICAL",
+    "direction": "Underconsumption Drop",
+    "residualMW": -225.5,
+    "deviationPct": 6.25,
+    "actualMW": 3386.0,
+    "expectedMW": 3611.5,
+    "status": "INVESTIGATING",
+    "assignedTo": "Substation Grid Crew Beta",
+    "priority": "HIGH",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-225.5 MW below baseline).",
+    "createdAt": "Jul 20, 2018T15:00:00",
+    "updatedAt": "2026-08-17T12:02:14.675376",
+    "logs": [
+      {
+        "timestamp": "Jul 20, 2018 15:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-225.5 MW, 6.25%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_INVESTIGATING",
+        "message": "Incident moved to INVESTIGATING state."
+      }
+    ]
+  },
+  "INC-Jul152018-DEOK-06": {
+    "id": "INC-Jul152018-DEOK-06",
+    "region": "DEOK",
+    "anomalyId": "ano_DEOK_5_2018071508",
+    "timestamp": "Jul 15, 2018 08:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -102.5,
+    "deviationPct": 3.27,
+    "actualMW": 3034.0,
+    "expectedMW": 3136.5,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-102.5 MW below baseline).",
+    "createdAt": "Jul 15, 2018T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.675376",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-102.5 MW, 3.27%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul142018-DEOK-07": {
+    "id": "INC-Jul142018-DEOK-07",
+    "region": "DEOK",
+    "anomalyId": "ano_DEOK_6_2018071418",
+    "timestamp": "Jul 14, 2018 18:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 130.9,
+    "deviationPct": 2.83,
+    "actualMW": 4753.0,
+    "expectedMW": 4622.1,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "High grid stress during peak tariff window (18:00). Unplanned industrial equipment surge.",
+    "createdAt": "Jul 14, 2018T18:00:00",
+    "updatedAt": "2026-08-17T12:02:14.675376",
+    "logs": [
+      {
+        "timestamp": "Jul 14, 2018 18:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+130.9 MW, 2.83%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul112018-DEOK-08": {
+    "id": "INC-Jul112018-DEOK-08",
+    "region": "DEOK",
+    "anomalyId": "ano_DEOK_7_2018071106",
+    "timestamp": "Jul 11, 2018 06:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -103.3,
+    "deviationPct": 3.07,
+    "actualMW": 3260.0,
+    "expectedMW": 3363.3,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-103.3 MW below baseline).",
+    "createdAt": "Jul 11, 2018T06:00:00",
+    "updatedAt": "2026-08-17T12:02:14.675376",
+    "logs": [
+      {
+        "timestamp": "Jul 11, 2018 06:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-103.3 MW, 3.07%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul102018-DEOK-09": {
+    "id": "INC-Jul102018-DEOK-09",
+    "region": "DEOK",
+    "anomalyId": "ano_DEOK_8_2018071019",
+    "timestamp": "Jul 10, 2018 19:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -161.5,
+    "deviationPct": 3.28,
+    "actualMW": 4760.0,
+    "expectedMW": 4921.5,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-161.5 MW below baseline).",
+    "createdAt": "Jul 10, 2018T19:00:00",
+    "updatedAt": "2026-08-17T12:02:14.675376",
+    "logs": [
+      {
+        "timestamp": "Jul 10, 2018 19:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-161.5 MW, 3.28%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul092018-DEOK-10": {
+    "id": "INC-Jul092018-DEOK-10",
+    "region": "DEOK",
+    "anomalyId": "ano_DEOK_9_2018070921",
+    "timestamp": "Jul 09, 2018 21:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -128.7,
+    "deviationPct": 2.81,
+    "actualMW": 4455.0,
+    "expectedMW": 4583.7,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-128.7 MW below baseline).",
+    "createdAt": "Jul 09, 2018T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.675376",
+    "logs": [
+      {
+        "timestamp": "Jul 09, 2018 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-128.7 MW, 2.81%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul072018-DEOK-11": {
+    "id": "INC-Jul072018-DEOK-11",
+    "region": "DEOK",
+    "anomalyId": "ano_DEOK_10_2018070714",
+    "timestamp": "Jul 07, 2018 14:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 93.0,
+    "deviationPct": 2.74,
+    "actualMW": 3485.0,
+    "expectedMW": 3392.0,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Jul 07, 2018T14:00:00",
+    "updatedAt": "2026-08-17T12:02:14.675376",
+    "logs": [
+      {
+        "timestamp": "Jul 07, 2018 14:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+93.0 MW, 2.74%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul062018-DEOK-12": {
+    "id": "INC-Jul062018-DEOK-12",
+    "region": "DEOK",
+    "anomalyId": "ano_DEOK_11_2018070621",
+    "timestamp": "Jul 06, 2018 21:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -119.6,
+    "deviationPct": 3.24,
+    "actualMW": 3574.0,
+    "expectedMW": 3693.6,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-119.6 MW below baseline).",
+    "createdAt": "Jul 06, 2018T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.675376",
+    "logs": [
+      {
+        "timestamp": "Jul 06, 2018 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-119.6 MW, 3.24%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul222018-EKPC-01": {
+    "id": "INC-Jul222018-EKPC-01",
+    "region": "EKPC",
+    "anomalyId": "ano_EKPC_0_2018072223",
+    "timestamp": "Jul 22, 2018 23:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -95.6,
+    "deviationPct": 7.19,
+    "actualMW": 1235.0,
+    "expectedMW": 1330.6,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-95.6 MW below baseline).",
+    "createdAt": "Jul 22, 2018T23:00:00",
+    "updatedAt": "2026-08-17T12:02:14.678378",
+    "logs": [
+      {
+        "timestamp": "Jul 22, 2018 23:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-95.6 MW, 7.19%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul152018-EKPC-02": {
+    "id": "INC-Jul152018-EKPC-02",
+    "region": "EKPC",
+    "anomalyId": "ano_EKPC_1_2018071514",
+    "timestamp": "Jul 15, 2018 14:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -109.1,
+    "deviationPct": 5.5,
+    "actualMW": 1873.0,
+    "expectedMW": 1982.1,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-109.1 MW below baseline).",
+    "createdAt": "Jul 15, 2018T14:00:00",
+    "updatedAt": "2026-08-17T12:02:14.678378",
+    "logs": [
+      {
+        "timestamp": "Jul 15, 2018 14:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-109.1 MW, 5.5%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul102018-EKPC-03": {
+    "id": "INC-Jul102018-EKPC-03",
+    "region": "EKPC",
+    "anomalyId": "ano_EKPC_2_2018071007",
+    "timestamp": "Jul 10, 2018 07:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 82.8,
+    "deviationPct": 6.53,
+    "actualMW": 1350.0,
+    "expectedMW": 1267.2,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 82.8 MW (6.5% over expected).",
+    "createdAt": "Jul 10, 2018T07:00:00",
+    "updatedAt": "2026-08-17T12:02:14.678378",
+    "logs": [
+      {
+        "timestamp": "Jul 10, 2018 07:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+82.8 MW, 6.53%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul052018-EKPC-04": {
+    "id": "INC-Jul052018-EKPC-04",
+    "region": "EKPC",
+    "anomalyId": "ano_EKPC_3_2018070519",
+    "timestamp": "Jul 05, 2018 19:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -157.3,
+    "deviationPct": 6.96,
+    "actualMW": 2101.0,
+    "expectedMW": 2258.3,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-157.3 MW below baseline).",
+    "createdAt": "Jul 05, 2018T19:00:00",
+    "updatedAt": "2026-08-17T12:02:14.678378",
+    "logs": [
+      {
+        "timestamp": "Jul 05, 2018 19:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-157.3 MW, 6.96%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul052018-EKPC-05": {
+    "id": "INC-Jul052018-EKPC-05",
+    "region": "EKPC",
+    "anomalyId": "ano_EKPC_4_2018070512",
+    "timestamp": "Jul 05, 2018 12:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 131.1,
+    "deviationPct": 6.25,
+    "actualMW": 2227.0,
+    "expectedMW": 2095.9,
+    "status": "INVESTIGATING",
+    "assignedTo": "Substation Grid Crew Beta",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 131.1 MW (6.3% over expected).",
+    "createdAt": "Jul 05, 2018T12:00:00",
+    "updatedAt": "2026-08-17T12:02:14.678378",
+    "logs": [
+      {
+        "timestamp": "Jul 05, 2018 12:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+131.1 MW, 6.25%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_INVESTIGATING",
+        "message": "Incident moved to INVESTIGATING state."
+      }
+    ]
+  },
+  "INC-Jul052018-EKPC-06": {
+    "id": "INC-Jul052018-EKPC-06",
+    "region": "EKPC",
+    "anomalyId": "ano_EKPC_5_2018070508",
+    "timestamp": "Jul 05, 2018 08:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 94.2,
+    "deviationPct": 6.19,
+    "actualMW": 1616.0,
+    "expectedMW": 1521.8,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 94.2 MW (6.2% over expected).",
+    "createdAt": "Jul 05, 2018T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.678378",
+    "logs": [
+      {
+        "timestamp": "Jul 05, 2018 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+94.2 MW, 6.19%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-EKPC-07": {
+    "id": "INC-Jul042018-EKPC-07",
+    "region": "EKPC",
+    "anomalyId": "ano_EKPC_6_2018070410",
+    "timestamp": "Jul 04, 2018 10:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 110.8,
+    "deviationPct": 6.19,
+    "actualMW": 1901.0,
+    "expectedMW": 1790.2,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 110.8 MW (6.2% over expected).",
+    "createdAt": "Jul 04, 2018T10:00:00",
+    "updatedAt": "2026-08-17T12:02:14.678378",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 10:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+110.8 MW, 6.19%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-EKPC-08": {
+    "id": "INC-Jul042018-EKPC-08",
+    "region": "EKPC",
+    "anomalyId": "ano_EKPC_7_2018070409",
+    "timestamp": "Jul 04, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 104.8,
+    "deviationPct": 6.72,
+    "actualMW": 1664.0,
+    "expectedMW": 1559.2,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 104.8 MW (6.7% over expected).",
+    "createdAt": "Jul 04, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.678378",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+104.8 MW, 6.72%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-EKPC-09": {
+    "id": "INC-Jul042018-EKPC-09",
+    "region": "EKPC",
+    "anomalyId": "ano_EKPC_8_2018070408",
+    "timestamp": "Jul 04, 2018 08:00",
+    "severity": "CRITICAL",
+    "direction": "Overconsumption Spike",
+    "residualMW": 133.6,
+    "deviationPct": 10.26,
+    "actualMW": 1436.0,
+    "expectedMW": 1302.4,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "HIGH",
+    "rootCauseDescription": "Load exceeded forecast by 133.6 MW (10.3% over expected).",
+    "createdAt": "Jul 04, 2018T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.678378",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+133.6 MW, 10.26%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-EKPC-10": {
+    "id": "INC-Jul042018-EKPC-10",
+    "region": "EKPC",
+    "anomalyId": "ano_EKPC_9_2018070407",
+    "timestamp": "Jul 04, 2018 07:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 95.6,
+    "deviationPct": 8.31,
+    "actualMW": 1246.0,
+    "expectedMW": 1150.4,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 95.6 MW (8.3% over expected).",
+    "createdAt": "Jul 04, 2018T07:00:00",
+    "updatedAt": "2026-08-17T12:02:14.678378",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 07:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+95.6 MW, 8.31%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-EKPC-11": {
+    "id": "INC-Jul042018-EKPC-11",
+    "region": "EKPC",
+    "anomalyId": "ano_EKPC_10_2018070406",
+    "timestamp": "Jul 04, 2018 06:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -117.8,
+    "deviationPct": 9.51,
+    "actualMW": 1121.0,
+    "expectedMW": 1238.8,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-117.8 MW below baseline).",
+    "createdAt": "Jul 04, 2018T06:00:00",
+    "updatedAt": "2026-08-17T12:02:14.678378",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 06:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-117.8 MW, 9.51%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul032018-EKPC-12": {
+    "id": "INC-Jul032018-EKPC-12",
+    "region": "EKPC",
+    "anomalyId": "ano_EKPC_11_2018070309",
+    "timestamp": "Jul 03, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 109.7,
+    "deviationPct": 7.7,
+    "actualMW": 1534.0,
+    "expectedMW": 1424.3,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 109.7 MW (7.7% over expected).",
+    "createdAt": "Jul 03, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.678378",
+    "logs": [
+      {
+        "timestamp": "Jul 03, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+109.7 MW, 7.7%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Dec312010-NI-01": {
+    "id": "INC-Dec312010-NI-01",
+    "region": "NI",
+    "anomalyId": "ano_NI_0_2010123109",
+    "timestamp": "Dec 31, 2010 09:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -452.7,
+    "deviationPct": 4.33,
+    "actualMW": 10004.0,
+    "expectedMW": 10456.7,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-452.7 MW below baseline).",
+    "createdAt": "Dec 31, 2010T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.682382",
+    "logs": [
+      {
+        "timestamp": "Dec 31, 2010 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-452.7 MW, 4.33%) vs baseline."
+      }
+    ]
+  },
+  "INC-Dec252010-NI-02": {
+    "id": "INC-Dec252010-NI-02",
+    "region": "NI",
+    "anomalyId": "ano_NI_1_2010122512",
+    "timestamp": "Dec 25, 2010 12:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 336.3,
+    "deviationPct": 3.35,
+    "actualMW": 10368.0,
+    "expectedMW": 10031.7,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Dec 25, 2010T12:00:00",
+    "updatedAt": "2026-08-17T12:02:14.682382",
+    "logs": [
+      {
+        "timestamp": "Dec 25, 2010 12:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+336.3 MW, 3.35%) vs baseline."
+      }
+    ]
+  },
+  "INC-Dec132010-NI-03": {
+    "id": "INC-Dec132010-NI-03",
+    "region": "NI",
+    "anomalyId": "ano_NI_2_2010121301",
+    "timestamp": "Dec 13, 2010 01:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 245.8,
+    "deviationPct": 2.2,
+    "actualMW": 11435.0,
+    "expectedMW": 11189.2,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 245.8 MW (2.2% over expected).",
+    "createdAt": "Dec 13, 2010T01:00:00",
+    "updatedAt": "2026-08-17T12:02:14.682382",
+    "logs": [
+      {
+        "timestamp": "Dec 13, 2010 01:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+245.8 MW, 2.2%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Dec112010-NI-04": {
+    "id": "INC-Dec112010-NI-04",
+    "region": "NI",
+    "anomalyId": "ano_NI_3_2010121107",
+    "timestamp": "Dec 11, 2010 07:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 368.9,
+    "deviationPct": 3.55,
+    "actualMW": 10755.0,
+    "expectedMW": 10386.1,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Dec 11, 2010T07:00:00",
+    "updatedAt": "2026-08-17T12:02:14.682382",
+    "logs": [
+      {
+        "timestamp": "Dec 11, 2010 07:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+368.9 MW, 3.55%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Dec102010-NI-05": {
+    "id": "INC-Dec102010-NI-05",
+    "region": "NI",
+    "anomalyId": "ano_NI_4_2010121008",
+    "timestamp": "Dec 10, 2010 08:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -337.7,
+    "deviationPct": 2.54,
+    "actualMW": 12945.0,
+    "expectedMW": 13282.7,
+    "status": "INVESTIGATING",
+    "assignedTo": "Substation Grid Crew Beta",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-337.7 MW below baseline).",
+    "createdAt": "Dec 10, 2010T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.682382",
+    "logs": [
+      {
+        "timestamp": "Dec 10, 2010 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-337.7 MW, 2.54%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_INVESTIGATING",
+        "message": "Incident moved to INVESTIGATING state."
+      }
+    ]
+  },
+  "INC-Dec092010-NI-06": {
+    "id": "INC-Dec092010-NI-06",
+    "region": "NI",
+    "anomalyId": "ano_NI_5_2010120923",
+    "timestamp": "Dec 09, 2010 23:00",
+    "severity": "CRITICAL",
+    "direction": "Underconsumption Drop",
+    "residualMW": -1072.2,
+    "deviationPct": 8.32,
+    "actualMW": 11814.0,
+    "expectedMW": 12886.2,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "HIGH",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-1072.2 MW below baseline).",
+    "createdAt": "Dec 09, 2010T23:00:00",
+    "updatedAt": "2026-08-17T12:02:14.682382",
+    "logs": [
+      {
+        "timestamp": "Dec 09, 2010 23:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-1,072.2 MW, 8.32%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Nov262010-NI-07": {
+    "id": "INC-Nov262010-NI-07",
+    "region": "NI",
+    "anomalyId": "ano_NI_6_2010112606",
+    "timestamp": "Nov 26, 2010 06:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -305.2,
+    "deviationPct": 2.99,
+    "actualMW": 9905.0,
+    "expectedMW": 10210.2,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-305.2 MW below baseline).",
+    "createdAt": "Nov 26, 2010T06:00:00",
+    "updatedAt": "2026-08-17T12:02:14.682382",
+    "logs": [
+      {
+        "timestamp": "Nov 26, 2010 06:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-305.2 MW, 2.99%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Nov072010-NI-08": {
+    "id": "INC-Nov072010-NI-08",
+    "region": "NI",
+    "anomalyId": "ano_NI_7_2010110701",
+    "timestamp": "Nov 07, 2010 01:00",
+    "severity": "CRITICAL",
+    "direction": "Underconsumption Drop",
+    "residualMW": -406.2,
+    "deviationPct": 4.46,
+    "actualMW": 8698.0,
+    "expectedMW": 9104.2,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "HIGH",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-406.2 MW below baseline).",
+    "createdAt": "Nov 07, 2010T01:00:00",
+    "updatedAt": "2026-08-17T12:02:14.682382",
+    "logs": [
+      {
+        "timestamp": "Nov 07, 2010 01:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-406.2 MW, 4.46%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Nov062010-NI-09": {
+    "id": "INC-Nov062010-NI-09",
+    "region": "NI",
+    "anomalyId": "ano_NI_8_2010110619",
+    "timestamp": "Nov 06, 2010 19:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 354.9,
+    "deviationPct": 3.34,
+    "actualMW": 10994.0,
+    "expectedMW": 10639.1,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "High grid stress during peak tariff window (19:00). Unplanned industrial equipment surge.",
+    "createdAt": "Nov 06, 2010T19:00:00",
+    "updatedAt": "2026-08-17T12:02:14.682382",
+    "logs": [
+      {
+        "timestamp": "Nov 06, 2010 19:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+354.9 MW, 3.34%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Oct112010-NI-10": {
+    "id": "INC-Oct112010-NI-10",
+    "region": "NI",
+    "anomalyId": "ano_NI_9_2010101108",
+    "timestamp": "Oct 11, 2010 08:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -424.7,
+    "deviationPct": 3.87,
+    "actualMW": 10535.0,
+    "expectedMW": 10959.7,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-424.7 MW below baseline).",
+    "createdAt": "Oct 11, 2010T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.682382",
+    "logs": [
+      {
+        "timestamp": "Oct 11, 2010 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-424.7 MW, 3.87%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Sep272010-NI-11": {
+    "id": "INC-Sep272010-NI-11",
+    "region": "NI",
+    "anomalyId": "ano_NI_10_2010092707",
+    "timestamp": "Sep 27, 2010 07:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 390.7,
+    "deviationPct": 4.1,
+    "actualMW": 9910.0,
+    "expectedMW": 9519.3,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 390.7 MW (4.1% over expected).",
+    "createdAt": "Sep 27, 2010T07:00:00",
+    "updatedAt": "2026-08-17T12:02:14.682382",
+    "logs": [
+      {
+        "timestamp": "Sep 27, 2010 07:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+390.7 MW, 4.1%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Sep242010-NI-12": {
+    "id": "INC-Sep242010-NI-12",
+    "region": "NI",
+    "anomalyId": "ano_NI_11_2010092421",
+    "timestamp": "Sep 24, 2010 21:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -405.9,
+    "deviationPct": 3.33,
+    "actualMW": 11783.0,
+    "expectedMW": 12188.9,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-405.9 MW below baseline).",
+    "createdAt": "Sep 24, 2010T21:00:00",
+    "updatedAt": "2026-08-17T12:02:14.683377",
+    "logs": [
+      {
+        "timestamp": "Sep 24, 2010 21:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-405.9 MW, 3.33%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul242018-PJMW-01": {
+    "id": "INC-Jul242018-PJMW-01",
+    "region": "PJMW",
+    "anomalyId": "ano_PJMW_0_2018072423",
+    "timestamp": "Jul 24, 2018 23:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 173.2,
+    "deviationPct": 3.1,
+    "actualMW": 5768.0,
+    "expectedMW": 5594.8,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 173.2 MW (3.1% over expected).",
+    "createdAt": "Jul 24, 2018T23:00:00",
+    "updatedAt": "2026-08-17T12:02:14.687377",
+    "logs": [
+      {
+        "timestamp": "Jul 24, 2018 23:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+173.2 MW, 3.1%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul212018-PJMW-02": {
+    "id": "INC-Jul212018-PJMW-02",
+    "region": "PJMW",
+    "anomalyId": "ano_PJMW_1_2018072111",
+    "timestamp": "Jul 21, 2018 11:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -146.1,
+    "deviationPct": 2.51,
+    "actualMW": 5676.0,
+    "expectedMW": 5822.1,
+    "status": "NEW",
+    "assignedTo": "Unassigned",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-146.1 MW below baseline).",
+    "createdAt": "Jul 21, 2018T11:00:00",
+    "updatedAt": "2026-08-17T12:02:14.687377",
+    "logs": [
+      {
+        "timestamp": "Jul 21, 2018 11:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-146.1 MW, 2.51%) vs baseline."
+      }
+    ]
+  },
+  "INC-Jul172018-PJMW-03": {
+    "id": "INC-Jul172018-PJMW-03",
+    "region": "PJMW",
+    "anomalyId": "ano_PJMW_2_2018071720",
+    "timestamp": "Jul 17, 2018 20:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -219.4,
+    "deviationPct": 3.08,
+    "actualMW": 6899.0,
+    "expectedMW": 7118.4,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-219.4 MW below baseline).",
+    "createdAt": "Jul 17, 2018T20:00:00",
+    "updatedAt": "2026-08-17T12:02:14.687377",
+    "logs": [
+      {
+        "timestamp": "Jul 17, 2018 20:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-219.4 MW, 3.08%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul172018-PJMW-04": {
+    "id": "INC-Jul172018-PJMW-04",
+    "region": "PJMW",
+    "anomalyId": "ano_PJMW_3_2018071709",
+    "timestamp": "Jul 17, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -165.7,
+    "deviationPct": 2.54,
+    "actualMW": 6365.0,
+    "expectedMW": 6530.7,
+    "status": "ACKNOWLEDGED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-165.7 MW below baseline).",
+    "createdAt": "Jul 17, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.687377",
+    "logs": [
+      {
+        "timestamp": "Jul 17, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-165.7 MW, 2.54%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_ACKNOWLEDGED",
+        "message": "Incident moved to ACKNOWLEDGED state."
+      }
+    ]
+  },
+  "INC-Jul172018-PJMW-05": {
+    "id": "INC-Jul172018-PJMW-05",
+    "region": "PJMW",
+    "anomalyId": "ano_PJMW_4_2018071700",
+    "timestamp": "Jul 17, 2018 00:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 172.0,
+    "deviationPct": 3.06,
+    "actualMW": 5789.0,
+    "expectedMW": 5617.0,
+    "status": "INVESTIGATING",
+    "assignedTo": "Substation Grid Crew Beta",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 172.0 MW (3.1% over expected).",
+    "createdAt": "Jul 17, 2018T00:00:00",
+    "updatedAt": "2026-08-17T12:02:14.687377",
+    "logs": [
+      {
+        "timestamp": "Jul 17, 2018 00:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+172.0 MW, 3.06%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_INVESTIGATING",
+        "message": "Incident moved to INVESTIGATING state."
+      }
+    ]
+  },
+  "INC-Jul162018-PJMW-06": {
+    "id": "INC-Jul162018-PJMW-06",
+    "region": "PJMW",
+    "anomalyId": "ano_PJMW_5_2018071608",
+    "timestamp": "Jul 16, 2018 08:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 195.7,
+    "deviationPct": 3.32,
+    "actualMW": 6091.0,
+    "expectedMW": 5895.3,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 195.7 MW (3.3% over expected).",
+    "createdAt": "Jul 16, 2018T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.687377",
+    "logs": [
+      {
+        "timestamp": "Jul 16, 2018 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+195.7 MW, 3.32%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul082018-PJMW-07": {
+    "id": "INC-Jul082018-PJMW-07",
+    "region": "PJMW",
+    "anomalyId": "ano_PJMW_6_2018070815",
+    "timestamp": "Jul 08, 2018 15:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 166.7,
+    "deviationPct": 2.82,
+    "actualMW": 6076.0,
+    "expectedMW": 5909.3,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Unexpected weekend baseline surge exceeding scheduled setback mode.",
+    "createdAt": "Jul 08, 2018T15:00:00",
+    "updatedAt": "2026-08-17T12:02:14.687377",
+    "logs": [
+      {
+        "timestamp": "Jul 08, 2018 15:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+166.7 MW, 2.82%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul082018-PJMW-08": {
+    "id": "INC-Jul082018-PJMW-08",
+    "region": "PJMW",
+    "anomalyId": "ano_PJMW_7_2018070808",
+    "timestamp": "Jul 08, 2018 08:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -166.1,
+    "deviationPct": 3.73,
+    "actualMW": 4289.0,
+    "expectedMW": 4455.1,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-166.1 MW below baseline).",
+    "createdAt": "Jul 08, 2018T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.687377",
+    "logs": [
+      {
+        "timestamp": "Jul 08, 2018 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-166.1 MW, 3.73%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul072018-PJMW-09": {
+    "id": "INC-Jul072018-PJMW-09",
+    "region": "PJMW",
+    "anomalyId": "ano_PJMW_8_2018070720",
+    "timestamp": "Jul 07, 2018 20:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -164.4,
+    "deviationPct": 2.85,
+    "actualMW": 5609.0,
+    "expectedMW": 5773.4,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-164.4 MW below baseline).",
+    "createdAt": "Jul 07, 2018T20:00:00",
+    "updatedAt": "2026-08-17T12:02:14.687377",
+    "logs": [
+      {
+        "timestamp": "Jul 07, 2018 20:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-164.4 MW, 2.85%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul072018-PJMW-10": {
+    "id": "INC-Jul072018-PJMW-10",
+    "region": "PJMW",
+    "anomalyId": "ano_PJMW_9_2018070709",
+    "timestamp": "Jul 07, 2018 09:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -136.9,
+    "deviationPct": 2.74,
+    "actualMW": 4864.0,
+    "expectedMW": 5000.9,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-136.9 MW below baseline).",
+    "createdAt": "Jul 07, 2018T09:00:00",
+    "updatedAt": "2026-08-17T12:02:14.687377",
+    "logs": [
+      {
+        "timestamp": "Jul 07, 2018 09:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-136.9 MW, 2.74%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul062018-PJMW-11": {
+    "id": "INC-Jul062018-PJMW-11",
+    "region": "PJMW",
+    "anomalyId": "ano_PJMW_10_2018070608",
+    "timestamp": "Jul 06, 2018 08:00",
+    "severity": "MEDIUM",
+    "direction": "Underconsumption Drop",
+    "residualMW": -180.3,
+    "deviationPct": 3.01,
+    "actualMW": 5810.0,
+    "expectedMW": 5990.3,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Substation generation drop / partial facility shedding (-180.3 MW below baseline).",
+    "createdAt": "Jul 06, 2018T08:00:00",
+    "updatedAt": "2026-08-17T12:02:14.687377",
+    "logs": [
+      {
+        "timestamp": "Jul 06, 2018 08:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (-180.3 MW, 3.01%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  },
+  "INC-Jul042018-PJMW-12": {
+    "id": "INC-Jul042018-PJMW-12",
+    "region": "PJMW",
+    "anomalyId": "ano_PJMW_11_2018070423",
+    "timestamp": "Jul 04, 2018 23:00",
+    "severity": "MEDIUM",
+    "direction": "Overconsumption Spike",
+    "residualMW": 169.0,
+    "deviationPct": 2.97,
+    "actualMW": 5854.0,
+    "expectedMW": 5685.0,
+    "status": "RESOLVED",
+    "assignedTo": "Control Room Shift Alpha",
+    "priority": "MEDIUM",
+    "rootCauseDescription": "Load exceeded forecast by 169.0 MW (3.0% over expected).",
+    "createdAt": "Jul 04, 2018T23:00:00",
+    "updatedAt": "2026-08-17T12:02:14.687377",
+    "logs": [
+      {
+        "timestamp": "Jul 04, 2018 23:00",
+        "operator": "AI Anomaly Engine",
+        "action": "INCIDENT_CREATED",
+        "message": "Deviation detected (+169.0 MW, 2.97%) vs baseline."
+      },
+      {
+        "timestamp": "2026-08-17 12:02",
+        "operator": "Senior Operator",
+        "action": "STATUS_CHANGED_RESOLVED",
+        "message": "Incident moved to RESOLVED state."
+      }
+    ]
+  }
+}
