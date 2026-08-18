@@ -496,7 +496,7 @@ class DataAnalyticsEngine:
                 f"| :--- | :--- |\n"
                 f"| **Mean Average Load** | **`{mean_load:,.1f} MW`** |\n"
                 f"| **Median Load** | `{median_load:,.1f} MW` |\n"
-                f"| **Standard Deviation ($\sigma$)** | `{std_load:,.1f} MW` (Volatility: `{(std_load/mean_load)*100:.1f}%`) |\n"
+                f"| **Standard Deviation (\u03c3)** | `{std_load:,.1f} MW` (Volatility: `{(std_load/mean_load)*100:.1f}%`) |\n"
                 f"| **Total Energy Volume** | **`{total_energy_gwh:,.2f} GWh`** (`{loads.sum():,.0f} MWh`) |\n"
                 f"| **Range (Min $\\rightarrow$ Max)** | `{min_load:,.1f} MW` $\\rightarrow$ `{max_load:,.1f} MW` |\n"
                 f"| **Interquartile Range (25%–75%)** | `{np.percentile(loads, 25):,.1f} MW` to `{np.percentile(loads, 75):,.1f} MW` |\n\n"
@@ -544,7 +544,7 @@ class DataAnalyticsEngine:
             f"| **Maximum Peak Load** | **`{max_load:,.1f} MW`** | Recorded at `{str(max_row['Datetime'])}` |\n"
             f"| **Minimum Load** | **`{min_load:,.1f} MW`** | Recorded at `{str(min_row['Datetime'])}` |\n"
             f"| **Total Volume** | **`{total_energy_gwh:,.2f} GWh`** | Total energy supplied |\n"
-            f"| **Volatility ($\sigma$)** | `\u00b1{std_load:,.1f} MW` | Standard deviation |\n\n"
+            f"| **Volatility (\u03c3)** | `\u00b1{std_load:,.1f} MW` | Standard deviation |\n\n"
             f"*You can ask specific questions like \"What was the highest load in 2017?\", \"Average consumption on Sundays\", or \"How many hours exceeded {mean_load:,.0f} MW?\".*"
         )
         return {"answer": answer, "source": f"DataAnalyticsEngine / {region}_cleaned.csv"}

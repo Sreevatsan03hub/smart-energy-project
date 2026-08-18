@@ -76,7 +76,7 @@ app.include_router(reporting_router, prefix="/api")
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
-@app.get("/api/health-check")
+@app.api_route("/api/health-check", methods=["GET", "HEAD"])
 def health_check():
     return {
         "status": "healthy",
@@ -92,7 +92,7 @@ ASSETS_DIR = os.path.join(DIST_DIR, "assets")
 if os.path.exists(ASSETS_DIR):
     app.mount("/assets", StaticFiles(directory=ASSETS_DIR), name="assets")
 
-@app.get("/{full_path:path}")
+@app.api_route("/{full_path:path}", methods=["GET", "HEAD"])
 async def serve_spa(full_path: str):
     # Return specific static asset if present in dist root
     potential_file = os.path.join(DIST_DIR, full_path)
