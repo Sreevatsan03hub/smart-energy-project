@@ -252,6 +252,7 @@ class DataAnalyticsEngine:
 
     @classmethod
     def get_cleaned_df(cls, region: str) -> Optional[pd.DataFrame]:
+        import gc
         region = region.upper()
         if region in cls._cleaned_cache:
             return cls._cleaned_cache[region]
@@ -261,19 +262,20 @@ class DataAnalyticsEngine:
             path = os.path.join(DATA_DIR, "raw", f"{region}_hourly.csv")
         
         if os.path.exists(path):
+            if len(cls._cleaned_cache) >= 2:
+                cls._cleaned_cache.clear()
+                gc.collect()
+
             df = pd.read_csv(path)
             df["Datetime"] = pd.to_datetime(df["Datetime"])
             load_col = f"{region}_MW" if f"{region}_MW" in df.columns else "MW"
             if load_col not in df.columns and len(df.columns) >= 2:
                 load_col = df.columns[1]
-            df["load_mw"] = pd.to_numeric(df[load_col], errors="coerce")
-            df["year"] = df["Datetime"].dt.year
-            df["month"] = df["Datetime"].dt.month
-            df["month_name"] = df["Datetime"].dt.month_name()
-            df["day"] = df["Datetime"].dt.day
-            df["day_of_week"] = df["Datetime"].dt.day_name()
-            df["is_weekend"] = df["Datetime"].dt.dayofweek >= 5
-            df["hour"] = df["Datetime"].dt.hour
+            df["load_mw"] = pd.to_numeric(df[load_col], errors="coerce").astype("float32")
+            df["year"] = df["Datetime"].dt.year.astype("int16")
+            df["month"] = df["Datetime"].dt.month.astype("int8")
+            df["day"] = df["Datetime"].dt.day.astype("int8")
+            df["hour"] = df["Datetime"].dt.hour.astype("int8")
             df = df.dropna(subset=["load_mw"]).sort_values("Datetime").reset_index(drop=True)
             cls._cleaned_cache[region] = df
             return df
@@ -281,23 +283,28 @@ class DataAnalyticsEngine:
 
     @classmethod
     def get_predictions_df(cls, region: str) -> Optional[pd.DataFrame]:
+        import gc
         region = region.upper()
         if region in cls._preds_cache:
             return cls._preds_cache[region]
         
         path = os.path.join(PREDICTIONS_DIR, f"{region}_predictions.csv")
         if os.path.exists(path):
+            if len(cls._preds_cache) >= 2:
+                cls._preds_cache.clear()
+                gc.collect()
+
             df = pd.read_csv(path)
             df["Datetime"] = pd.to_datetime(df["Datetime"])
             actual_col = "Actual" if "Actual" in df.columns else f"{region}_MW"
-            df["actual"] = pd.to_numeric(df[actual_col], errors="coerce")
-            df["predicted"] = pd.to_numeric(df["Predicted"], errors="coerce")
-            df["error"] = df["actual"] - df["predicted"]
-            df["abs_error"] = df["error"].abs()
-            df["error_pct"] = (df["abs_error"] / df["actual"].replace(0, np.nan)) * 100.0
-            df["year"] = df["Datetime"].dt.year
-            df["month"] = df["Datetime"].dt.month
-            df["hour"] = df["Datetime"].dt.hour
+            df["actual"] = pd.to_numeric(df[actual_col], errors="coerce").astype("float32")
+            df["predicted"] = pd.to_numeric(df["Predicted"], errors="coerce").astype("float32")
+            df["error"] = (df["actual"] - df["predicted"]).astype("float32")
+            df["abs_error"] = df["error"].abs().astype("float32")
+            df["error_pct"] = ((df["abs_error"] / df["actual"].replace(0, np.nan)) * 100.0).astype("float32")
+            df["year"] = df["Datetime"].dt.year.astype("int16")
+            df["month"] = df["Datetime"].dt.month.astype("int8")
+            df["hour"] = df["Datetime"].dt.hour.astype("int8")
             df = df.dropna(subset=["actual", "predicted"]).sort_values("Datetime").reset_index(drop=True)
             cls._preds_cache[region] = df
             return df
@@ -305,18 +312,22 @@ class DataAnalyticsEngine:
 
     @classmethod
     def get_anomalies_df(cls, region: str) -> Optional[pd.DataFrame]:
+        import gc
         region = region.upper()
         if region in cls._anomalies_cache:
             return cls._anomalies_cache[region]
         
         path = os.path.join(ANOMALIES_DIR, f"{region}_final_anomalies.csv")
         if os.path.exists(path):
+            if len(cls._anomalies_cache) >= 2:
+                cls._anomalies_cache.clear()
+                gc.collect()
+
             df = pd.read_csv(path)
             df["Datetime"] = pd.to_datetime(df["Datetime"])
-            df["year"] = df["Datetime"].dt.year
-            df["month"] = df["Datetime"].dt.month
-            df["hour"] = df["Datetime"].dt.hour
-            df["day_name"] = df["Datetime"].dt.day_name()
+            df["year"] = df["Datetime"].dt.year.astype("int16")
+            df["month"] = df["Datetime"].dt.month.astype("int8")
+            df["hour"] = df["Datetime"].dt.hour.astype("int8")
             df = df.sort_values("Datetime").reset_index(drop=True)
             cls._anomalies_cache[region] = df
             return df

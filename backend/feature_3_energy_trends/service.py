@@ -32,19 +32,30 @@ class EnergyTrendsService:
             if f.endswith("_cleaned.csv")
         ])
 
-    @staticmethod
-    def load_region_dataframe(region: str) -> pd.DataFrame:
-        """
-        Loads cleaned region CSV, standardizes column to 'consumption_mw',
-        and sets Datetime index.
-        """
-        region = region.strip().upper()
-        path = os.path.join(DATA_DIR, f"{region}_cleaned.csv")
+    _df_cache: dict[str, pd.DataFrame] = {}
 
+    @classmethod
+    def load_region_dataframe(cls, region: str) -> pd.DataFrame:
+        """
+        Loads cleaned region CSV with memory optimization (float32 + LRU cache).
+        Keeps only the active regions in memory to stay under 512MB RAM.
+        """
+        import gc
+        region = region.strip().upper()
+        
+        if region in cls._df_cache:
+            return cls._df_cache[region]
+
+        path = os.path.join(DATA_DIR, f"{region}_cleaned.csv")
         if not os.path.exists(path):
             raise FileNotFoundError(f"Region '{region}' cleaned dataset not found at {path}")
 
-        df = pd.read_csv(path)
+        # Evict older regions if cache exceeds 3 to free memory
+        if len(cls._df_cache) >= 3:
+            cls._df_cache.clear()
+            gc.collect()
+
+        df = pd.read_csv(path, usecols=["Datetime", f"{region}_MW"] if f"{region}_MW" in pd.read_csv(path, nrows=1).columns else None)
         if "Datetime" not in df.columns:
             raise ValueError(f"Missing 'Datetime' column in {path}")
 
@@ -57,8 +68,11 @@ class EnergyTrendsService:
 
         df["Datetime"] = pd.to_datetime(df["Datetime"], errors="coerce")
         df = df.rename(columns={value_col: "consumption_mw"})
+        df["consumption_mw"] = pd.to_numeric(df["consumption_mw"], errors="coerce").astype("float32")
         df = df[["Datetime", "consumption_mw"]].dropna()
         df = df.set_index("Datetime").sort_index()
+
+        cls._df_cache[region] = df
         return df
 
     @staticmethod
