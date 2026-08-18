@@ -17,12 +17,13 @@ class SimilarDayService:
     @staticmethod
     def load_prepared_dataframe(region: str) -> tuple[pd.DataFrame, str]:
         """
-        Loads cleaned CSV, ensures 24-hour completeness, and adds date/hour/weekday columns.
+        Loads cleaned CSV (last 2 years for fast vectorized matching) and adds temporal columns.
         """
         region = region.strip().upper()
-        df = EnergyTrendsService.load_region_dataframe(region)
+        # Take the most recent 730 days (2 years) to keep memory footprint under 2MB
+        df = EnergyTrendsService.load_region_dataframe(region).tail(730 * 24).copy()
         
-        # Add temporal columns
+        # Add temporal columns on the compact slice
         df["date"] = df.index.date
         df["hour"] = df.index.hour
         df["day_of_week"] = df.index.dayofweek
