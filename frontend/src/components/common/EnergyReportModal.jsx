@@ -29,6 +29,7 @@ export default function EnergyReportModal({
   const [endDate, setEndDate] = useState('');
   const [reportData, setReportData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [isExporting, setIsExporting] = useState(false);
 
   // Sync initialReportType prop if changed
   useEffect(() => {
@@ -66,18 +67,60 @@ export default function EnergyReportModal({
     loadReport();
   }, [isOpen, region, tariff, reportType, startDate, endDate]);
 
-  if (!isOpen) return null;
-
   const handlePrint = () => {
     window.print();
   };
 
-  const handleOpenPrintableView = () => {
-    const url = energyApi.getReportHtmlUrl(region, startDate, endDate, reportType, tariff);
-    window.open(url, '_blank');
+  const handleExportPDF = async () => {
+    setIsExporting(true);
+    try {
+      const url = energyApi.getReportHtmlUrl(region, startDate, endDate, reportType, tariff);
+      const response = await fetch(url);
+      const htmlContent = await response.text();
+
+      // Build filename
+      const regionLabel = region || 'PJME';
+      const typeLabel = reportType === 'financial' ? 'Financial' : 'Executive';
+      const dateStr = new Date().toISOString().split('T')[0];
+      const filename = `SmartEnergy_${regionLabel}_${typeLabel}_Report_${dateStr}.pdf`;
+
+      // Inject html2pdf.js from CDN and auto-download script (no print dialog)
+      const pdfHtml = htmlContent.replace(
+        '</body>',
+        `<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"><\/script>
+        <script>
+          window.onload = function() {
+            var opt = {
+              margin: [10, 10, 10, 10],
+              filename: '${filename}',
+              image: { type: 'jpeg', quality: 0.98 },
+              html2canvas: { scale: 2, useCORS: true, logging: false },
+              jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+              pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+            };
+            html2pdf().set(opt).from(document.body).save().then(function() {
+              setTimeout(function() { window.close(); }, 1000);
+            });
+          };
+        <\/script></body>`
+      );
+
+      const pdfWindow = window.open('', '_blank', 'width=1,height=1,left=-1000,top=-1000');
+      pdfWindow.document.open();
+      pdfWindow.document.write(pdfHtml);
+      pdfWindow.document.close();
+    } catch (err) {
+      console.error('PDF export failed:', err);
+      alert('PDF export failed. Please try again.');
+    } finally {
+      setIsExporting(false);
+    }
   };
 
   const meta = reportData?.metadata;
+
+  if (!isOpen) return null;
+
   const summary = reportData?.energySummary;
   const fc = reportData?.forecastPerformance;
   const peak = reportData?.peakAnalytics;
@@ -153,12 +196,13 @@ export default function EnergyReportModal({
               <span>Print</span>
             </button>
             <button 
-              onClick={handleOpenPrintableView}
+              onClick={handleExportPDF}
               className="btn btn-primary"
-              style={{ padding: '6px 12px', fontSize: '0.8rem' }}
+              style={{ padding: '6px 12px', fontSize: '0.8rem', opacity: isExporting ? 0.7 : 1 }}
+              disabled={isExporting}
             >
               <Download size={14} />
-              <span>Export PDF</span>
+              <span>{isExporting ? 'Preparing...' : 'Export PDF'}</span>
             </button>
             <button 
               onClick={onClose}
@@ -412,9 +456,9 @@ export default function EnergyReportModal({
             <button onClick={onClose} className="btn btn-outline" style={{ padding: '6px 14px', fontSize: '0.8rem' }}>
               Close
             </button>
-            <button onClick={handleOpenPrintableView} className="btn btn-primary" style={{ padding: '6px 16px', fontSize: '0.8rem' }}>
+            <button onClick={handleExportPDF} className="btn btn-primary" style={{ padding: '6px 16px', fontSize: '0.8rem', opacity: isExporting ? 0.7 : 1 }} disabled={isExporting}>
               <Download size={14} />
-              <span>Export PDF Report</span>
+              <span>{isExporting ? 'Preparing...' : 'Export PDF Report'}</span>
             </button>
           </div>
         </div>
